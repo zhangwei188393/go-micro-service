@@ -5,16 +5,16 @@ import (
 	"strconv"
 )
 
-type ProdModel struct {
-	ProdID int
-	ProdName string
-}
-
-
 //type ProdModel struct {
-//	ProdID int		`json:"pid"`
-//	ProdName string		`json:"pname"`
+//	ProdID int
+//	ProdName string
 //}
+
+
+type ProdModel struct {
+	ProdID int		`json:"pid"`
+	ProdName string		`json:"pname"`
+}
 
 func NewProd(id int,  pname string) *ProdModel {
 	return &ProdModel{ProdID:id, ProdName:pname}
